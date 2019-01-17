@@ -18,3 +18,8 @@ example_project_1 <- 2-D Grids erstellen und handhaben;
 example_project_2 <- Balkendiagramme;
 
 example_project_3 <- Scatter-Plots v.a. für die Darstellung von zeitlichen Daten gut geeignet;
+
+
+
+Anmerkungen: 
+-> 2D kontinuierliche Räume können am besten mit dem EasyScatterPlotPanel erstellt werden. 
