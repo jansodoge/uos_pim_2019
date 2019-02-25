@@ -1,0 +1,37 @@
+Das folgende Dokument beschreibt das Exportieren in Java als .csv Datei
+Das Tutorial basiert auf folgender Quelle:
+
+http://www.mkyong.com/java/how-to-export-data-to-csv-file-java/
+
+Zur Verwendung muss das entsprechende Paket in Java eingebunden werden
+
+
+package com.mkyong.utils;
+import java.io.FileWriter;
+import java.util.Arrays;
+
+public class CVSUtilExample {
+
+    public static void main(String[] args) throws Exception {
+
+        String csvFile = "/Users/mkyong/csv/abc.csv";
+        FileWriter writer = new FileWriter(csvFile);
+
+        CSVUtils.writeLine(writer, Arrays.asList("a", "b", "c", "d"));
+
+        //custom separator + quote
+        CSVUtils.writeLine(writer, Arrays.asList("aaa", "bb,b", "cc,c"), ',', '"');
+
+        //custom separator + quote
+        CSVUtils.writeLine(writer, Arrays.asList("aaa", "bbb", "cc,c"), '|', '\'');
+
+        //double-quotes
+        CSVUtils.writeLine(writer, Arrays.asList("aaa", "bbb", "cc\"c"));
+
+
+        writer.flush();
+        writer.close();
+
+    }
+
+}
