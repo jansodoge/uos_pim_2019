@@ -1,4 +1,4 @@
-# uos_pim_2019
+PIM Uni Osnabrück Kursvorbereitung
 
 
 
